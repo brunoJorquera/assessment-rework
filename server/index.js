@@ -29,5 +29,6 @@ app.post('/api/fortune', ctrl.addFortune)
 
 app.get('/api/phrase', ctrl.getPhrase)
 app.post('/api/phrase', ctrl.addPhrase)
+app.delete('/api/phrase/:value', ctrl.deletePhrase)
 
 app.listen(4000, () => console.log("Server running on 4000"));

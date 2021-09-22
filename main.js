@@ -4,6 +4,7 @@ const addFortuneForm = document.getElementById('add-fortune-form')
 const phraseBtn = document.getElementById('phrase-btn')
 const phraseContainer = document.getElementById('phrase-display')
 const addPhraseForm = document.getElementById('phrase-form')
+const deleteBtn = document.getElementById('delete-btn')
 
 document.getElementById("complimentButton").onclick = function () {
     axios.get("http://localhost:4000/api/compliment/")
@@ -64,4 +65,14 @@ addPhraseForm.addEventListener('submit', (e) =>{
         })
         .catch(err => console.log(err))
 
+})
+
+deleteBtn.addEventListener('click', (e) =>{
+    e.preventDefault()
+
+    axios.delete(`http://localhost:4000/api/phrase/:value`)
+        .then(res => {
+            console.log(res.data)
+        })
+        .catch(err => console.log(err))
 })

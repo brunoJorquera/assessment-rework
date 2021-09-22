@@ -36,5 +36,11 @@ module.exports = {
         phrases.push(value)
 
         res.status(200).send(phrases)
+    },
+    deletePhrase: (req,res) => {
+        const {value} = req.params
+        let index = phrases.findIndex(elem => elem.value === +value)
+        phrases.splice(index, 1)
+        res.status(200).send(phrases)
     }
 }
