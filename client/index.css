@@ -1,0 +1,28 @@
+.container{
+    background-color: beige;
+}
+
+.btns{
+    padding: 20px;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#compliment-div{
+    padding: 10px;
+}
+
+#features{
+    padding: 10px;
+    display: flex;
+    flex-direction:column;
+}
+
+#phrases{
+    padding: 10px;
+    display: flex;
+    flex-direction:column;
+}
+

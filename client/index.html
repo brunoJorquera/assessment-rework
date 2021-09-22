@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="container">
+    <section class="btns">
+
+      <div id="compliment-div">
+        <button id="complimentButton">Get a compliment</button>
+      </div>
+      <div id="features">
+        <form id="add-fortune-form">
+          <!-- Feature One of the add 3 more section is the add to fortunes section -->
+          <input type="text" id="fortune-input" placeholder="Create a Fortune!"/>
+          <button type="submit" id="add-fortune-btn">Add Fortune</button>
+        </form>
+        <button id="fortune-btn"> Get Fortune</button>
+      </div>
+      <section id="fortune-display"></section>
+      <div id="phrases">
+        <form id="phrase-form">
+          <!-- Feature Two of the add 3 more section is the delete phrase section -->
+          <input type="text" id="phrase-input" placeholder="Add a Funny Word!"/>
+          <button type="submit" id="add=phrase-btn"> Add a Word</button>
+        </form>
+        <button id="phrase-btn">Show Words</button>
+        <button id="delete-btn">Delete Word</button>
+      </div>
+      <section id="phrase-display"></section>
+    </section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../main.js"></script>
+  </body>
+</html>
