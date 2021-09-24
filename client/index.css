@@ -2,6 +2,15 @@
     background-color: beige;
 }
 
+#nav-bar{
+    padding: 10px;
+    height:100px;
+    background:rgb(110, 110, 110);
+    display: flex;
+    justify-content: space-between;
+    color: White;
+}
+
 .btns{
     padding: 20px;
     margin:10px;
