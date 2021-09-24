@@ -24,6 +24,7 @@ app.get("/api/compliment", (req, res) => {
   
 });
 
+// My end points for each button and input form
 app.get('/api/fortune', ctrl.getFortune)
 app.post('/api/fortune', ctrl.addFortune)
 
